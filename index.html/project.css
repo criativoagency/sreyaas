@@ -1,0 +1,21 @@
+marquee{
+    margin-top:10%;
+    font-size:30px;
+}
+.back-button {
+    display: inline-block;
+    color: #000000;
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: 15px;
+    margin-left:15px;
+    border: 2px solid #000000;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.back-button:active {
+    background-color: #000000;
+    color: #000;
+}

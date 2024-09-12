@@ -1,0 +1,118 @@
+*{
+    padding: 0;
+    margin:0;
+}
+body{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0) ;
+    font-family: 'Poppins', sans-serif;
+}
+.back-button {
+    display: inline-block;
+    color: #000000;
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: 15px;
+    margin-left:15px;
+    border: 2px solid #000000;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.back-button:active {
+    background-color: #000000;
+    color: #000;
+}
+.heading{
+    font-size:38px;
+    text-align: center;
+    margin-bottom:14px;
+}
+ 
+.box{
+    display: flex;
+    flex-direction: column;
+    margin-left:10%;
+    margin-right:10%;
+}
+marquee{
+    background-color: black;
+    color:white;
+    font-size:15px;
+    margin-bottom:15px;
+}
+#boxx h2{
+    color: red;
+}
+ 
+ 
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #boxx {
+    width: 80%;
+    margin: 20px;
+    padding: 20px;
+    background-color: #202020;
+    color: white;
+    border-radius: 10px;
+    opacity:0;
+    transform: translateY(50px);
+    animation: fadeInUp 1s forwards, float 3s ease-in-out infinite, scale 3s ease-in-out infinite;
+    animation-delay: 0s, 1s; /* Fade-in starts immediately, float and scale start after fade-in */
+    transition: transform 0.3s;
+  }
+  
+  #boxx:nth-child(1) {
+    animation-delay: 0.3s, 1.3s;
+  }
+  #boxx:nth-child(2) {
+    animation-delay: 0.6s, 1.6s;
+  }
+  #boxx:nth-child(3) {
+    animation-delay: 0.9s, 1.9s;
+  }
+  #boxx:nth-child(4) {
+    animation-delay: 1.2s, 2.2s;
+  }
+  #boxx:nth-child(5) {
+    animation-delay: 1.5s, 2.5s;
+  }
+  
+  /* Fade-in and slide up effect */
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Floating effect */
+  @keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  /* Subtle scaling effect */
+  @keyframes scale {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
